@@ -23,7 +23,7 @@ body{
     grid-template-rows: 2fr;
     gap: 30px;
     width: 90%;
-    margin: 0px auto;
+    margin: 4cm auto 0;
 }
 
 .page_component{
@@ -48,7 +48,38 @@ body{
 
 /* Profile Component Style*/
 .profile_head{
-    height: 4cm;
+    height: 5cm;
     width: 100%;
     background:linear-gradient(to right, #37bbcc, #228be7);
+}
+
+.profile_container{
+    margin-top: 2.7cm;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    background: rgb(255,255,255,0.7);
+    backdrop-filter: blur(10px); 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    width: 80%;
+    margin:2.5cm auto 0 ;
+    justify-content: center;
+    padding: 20px;
+    align-content: center;
+    border-radius: 17px;
+}
+
+.profile_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_img_container > img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -90px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px -10px;
 }
