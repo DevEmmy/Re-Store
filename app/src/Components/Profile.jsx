@@ -3,6 +3,7 @@ import React from 'react'
 function Profile() {
   return (
     <div className='profile_head'>
+      
         <div className="profile_container">
             <div className="profile_img_container">
 
