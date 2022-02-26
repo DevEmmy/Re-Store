@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AddFileBox from '../AddFileBox'
 import Profile from '../Profile'
 
 function MyReceipts() {
+  const [addFile, setAddFile] = useState(false)
+
+  
   return (
     <div className='receipts_page'>
       <Profile />
@@ -20,7 +24,11 @@ function MyReceipts() {
         </div>
       </div>
 
-      <div className="add_icon">
+      <div className="add_file_box_compo">
+        { addFile && <AddFileBox />}
+      </div>
+
+      <div className="add_icon" onClick={()=>setAddFile(!addFile)}>
         +
       </div>
     </div>

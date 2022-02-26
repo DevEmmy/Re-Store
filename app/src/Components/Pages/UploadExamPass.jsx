@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Profile from '../Profile'
+import AddFileBox from '../AddFileBox'
 
 function UploadExamPass() {
+  const [addFile, setAddFile] = useState(false)
+
+
   return (
     <div className='exam_pass'>
       <Profile />
@@ -20,8 +24,11 @@ function UploadExamPass() {
         </div>
       </div>
 
+      <div className="add_file_box_compo">
+        { addFile && <AddFileBox />}
+      </div>
 
-      <div className="add_icon">
+      <div className="add_icon" onClick={()=>setAddFile(!addFile)}>
         +
       </div>
 
