@@ -83,3 +83,73 @@ body{
     margin-top: -90px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px -10px;
 }
+
+/* Receipts Styles */
+.receipts_page{
+    display: grid;
+    grid-template-rows: 2fr;
+    gap: 50px;
+
+}
+
+.lists_of_receipts{
+    display: grid;
+    grid-template-rows: 2fr;
+    gap: 30px;
+    width: 90%;
+    margin: 4cm auto 0;
+}
+
+.receipt{
+    padding: 30px 30px;
+    color: white;
+    border-radius: 6px;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    background:#37ccb3;
+}
+
+.add_icon{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #228be7;
+    color: white;
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    box-shadow: 0 17px 56px rgba(0,0,0,0.2);
+}
+
+/* Exam Pass Styles */
+.exam_pass{
+    display: grid;
+    grid-template-rows: 2fr;
+    gap: 50px;
+
+}
+
+.lists_of_exam_pass{
+    display: grid;
+    grid-template-rows: 2fr;
+    gap: 30px;
+    width: 90%;
+    margin: 4cm auto 0;
+}
+
+.pass{
+    padding: 30px 30px;
+    color: white;
+    border-radius: 6px;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    background:#37ccb3;
+}
+
+a{
+    text-decoration: none;
+}
