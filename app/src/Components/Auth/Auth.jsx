@@ -10,11 +10,12 @@ function Auth() {
     <div>
         <h1 className='login_head'> Login </h1>
 
-        <Link to='/register'>
-            <div className="register_social_btn">
+        <a href="https://ad60-197-210-29-160.ngrok.io/">
+          <div className="register_social_btn">
                 Sign Up with Google
             </div>
-        </Link>
+        </a>
+            
 
         <div className="login_social_btn">
             <p>I have an account, <span className="sign_in_btn">Sign In</span></p>

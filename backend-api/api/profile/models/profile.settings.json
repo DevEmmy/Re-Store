@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "MatricNumber": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "College": {
+      "type": "string",
+      "required": true
+    },
+    "Department": {
+      "type": "string",
+      "required": true
+    },
+    "receipt": {
+      "via": "profile",
+      "model": "receipts"
+    },
+    "exam_pass": {
+      "via": "profile",
+      "model": "exam-pass"
+    }
+  }
+}
