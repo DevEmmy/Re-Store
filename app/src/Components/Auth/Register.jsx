@@ -1,4 +1,5 @@
-import React , {useRef}from 'react';
+import React , {useRef, useState}from 'react';
+import axios from 'axios';
 
 function Register(){
     const fullNameRef = useRef(null)
@@ -7,11 +8,28 @@ function Register(){
     const matricNumberRef = useRef(null)
     const departmentRef  = useRef(null)
 
+    const [jwt, setJwt] = useState([])
+
 
     const submitProfile = async ()=>{
-        const data = await fetch();
-        const response = await data.response.json()
-
+        const submitProfile = async ()=>{
+            const user = {
+                fullName: fullNameRef.current.value,
+                email: emailRef.current.value,
+                college: collegeRef.current.value,
+                matricNumber: matricNumberRef.current.value,
+                department: departmentRef.current.value,
+            }
+    
+            axios('http://127.0.0.1:1337/profiles', {
+                method: 'post',
+                data: JSON.stringify(user),
+                headers:{
+                    "Content-Type": 'application/json',
+                    Accept: "application/json"
+                }
+            })
+        }
     }
     return(
         <div className='register_page_container'>
